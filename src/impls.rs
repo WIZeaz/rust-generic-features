@@ -1,4 +1,4 @@
-use crate::types::{self, T1, T2};
+use crate::types::{self, T1, T2, T3, S};
 
 impl<T> types::S<T> {
     pub fn foo() {}
@@ -8,8 +8,10 @@ impl<T, U> T1<T> for types::S<U> {
     fn t1(self, t: T) {}
 }
 
-impl<T:Default> T1<T> for T{
-    fn t1(self,t:T) {
-        
-    }
+impl<T> T2 for T{
+    fn t2() {}
+}
+
+impl<T> T3 for S<T>{
+    fn t3() {}
 }

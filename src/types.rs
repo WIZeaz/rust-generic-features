@@ -8,3 +8,7 @@ pub trait T1<T> {
 pub trait T2 {
     fn t2();
 }
+
+pub trait T3{
+    fn t3();
+}
