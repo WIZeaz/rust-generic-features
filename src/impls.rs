@@ -15,3 +15,9 @@ impl<T> T2 for T{
 impl<T> T3 for S<T>{
     fn t3() {}
 }
+
+impl<T> AsRef<str> for S<T>{
+    fn as_ref(&self) -> &str {
+        "hello"
+    }
+}
